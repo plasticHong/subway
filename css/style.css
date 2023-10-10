@@ -123,6 +123,19 @@ footer .inner .footerMenu2 ul li {
   color: #000;
   margin-top: 50px;
   font: 40px/1 Black Han Sans;
+  position: relative;
+}
+.board h1::before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #ffcb0a;
+  border-radius: 50px 50px 0 50px;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  transform: translateX(-13px);
 }
 .board .inner {
   margin: 0 auto;
@@ -143,7 +156,20 @@ footer .inner .footerMenu2 ul li {
   font-size: 16px;
   color: #222;
   text-align: left;
-  font: 18px/1 Black Han Sans;
+  font: 25px/1 Black Han Sans;
+  position: relative;
+}
+.board .inner article h3::before {
+  display: inline-block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: #ffcb0a;
+  border-radius: 50px 50px 0 50px;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  transform: translateX(-13px);
 }
 .board .inner article > ul {
   width: 100%;
@@ -177,6 +203,8 @@ footer .inner .footerMenu2 ul li {
   font-size: 16px;
   color: #444;
   font: 14px/1 Noto Sans KR;
+  position: relative;
+  z-index: 1;
 }
 .board .inner article > ul > li .card .card-body .btn-primary {
   background-color: #239347;
