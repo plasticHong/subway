@@ -6,724 +6,295 @@
     <title>SUBWAY 써브웨이</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/220fae79fc.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header> 
-        <div class="inner">
-            <h1><a href="#;"><img src="img/subwayLogo.png" alt="서브웨이 로고"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="login.html">로그인</a></li>
-                    <li><a href="agreement.html">회원가입</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <button class="btn-primary" id  = "get-sandwich">button</button>
-    <section class="search">
-        <div class="inner">
-            <input type="text" placeholder="검색어를 입력해주세요.">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>    
-    </section>
-    <section class="board">
-        <h1>레시피 만들기</h1>
-        <div class="inner">
-            <h2>나만의 레시피를 만들어 보세요!</h2>
+<header>
+    <div class="inner">
+        <h1><a href="#;"><img src="img/subwayLogo.png" alt="서브웨이 로고"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="agreement.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="search">
+    <div class="inner">
+        <input type="text" placeholder="검색어를 입력해주세요.">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+</section>
+<section class="board">
+    <h1>레시피 만들기</h1>
+    <div class="inner">
+        <h2>나만의 레시피를 만들어 보세요!</h2>
 
-            <article class="menuPic">
-                <h3>
-                    메뉴 선택
-                </h3>
-                <ul id = "sandwich-list">
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li> <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li> <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li> 
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">스파이시 바비큐</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sandwich/spicy_bbq.png" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">357.7</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">7.4</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">25.2</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article class="breadPic">
-                <h3>
-                    빵 선택
-                </h3>
-                <ul>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">허니 오트</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/bread/honey_oat.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">43</span></p>
-                                <p class="card-text"><span class = "text-subject">fat : </span><span calss = "card-text-value">0.1</span></p>
-                                <p class="card-text"><span class = "text-subject">protein : </span><span calss = "card-text-value">0.4</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article class="cheesePic">
-                <h3>
-                    치즈 선택
-                </h3>
-                <ul>
-                    <li>
-                          <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">아메리칸 </h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/cheese/american.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">35.3</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                          <div class="card-body">
-                              <h5 class="card-title">아메리칸 </h5>
-                              <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/cheese/american.jpg" class="card-img-top" alt="...">
-                              <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">35.3</span></p>
-                              <a href="#" class="btn btn-primary">추가</a>
-                          </div>
-                      </div>
-                    </li>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">아메리칸 </h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/cheese/american.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">35.3</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article class="vegePic">
-                <h3>
-                    야채 선택
-                </h3>
-                <ul>
-                  <li>
-                    <div class="card  border-success mb-3" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">양상추</h5>
-                            <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                            <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                            <a href="#" class="btn btn-primary">추가</a>
-                        </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="card  border-success mb-3" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">양상추</h5>
-                            <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                            <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                            <a href="#" class="btn btn-primary">추가</a>
-                        </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="card  border-success mb-3" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">양상추</h5>
-                            <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                            <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                            <a href="#" class="btn btn-primary">추가</a>
-                        </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="card  border-success mb-3" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">양상추</h5>
-                            <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                            <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                            <a href="#" class="btn btn-primary">추가</a>
-                        </div>
-                    </div>
-                  </li>
-                </ul>
-                <ul>
-                    <li>
-                      <div class="card  border-success mb-3" style="width: 15rem;">
-                          <div class="card-body">
-                              <h5 class="card-title">양상추</h5>
-                              <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                              <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                              <a href="#" class="btn btn-primary">추가</a>
-                          </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card  border-success mb-3" style="width: 15rem;">
-                          <div class="card-body">
-                              <h5 class="card-title">양상추</h5>
-                              <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                              <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                              <a href="#" class="btn btn-primary">추가</a>
-                          </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card  border-success mb-3" style="width: 15rem;">
-                          <div class="card-body">
-                              <h5 class="card-title">양상추</h5>
-                              <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                              <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                              <a href="#" class="btn btn-primary">추가</a>
-                          </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="card  border-success mb-3" style="width: 15rem;">
-                          <div class="card-body">
-                              <h5 class="card-title">양상추</h5>
-                              <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/veggie/lettuce.jpg" class="card-img-top" alt="...">
-                              <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">2.9</span></p>
-                              <a href="#" class="btn btn-primary">추가</a>
-                          </div>
-                      </div>
-                    </li>
-                  </ul>
-            </article>
-            <article class="saucePic">
-                <h3>
-                    소스 선택
-                </h3>
-                <ul>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-        
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                </ul>
-                <ul>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                </ul>
-                <ul>
-                    <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="card  border-success mb-3" style="width: 15rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">랜치</h5>
-                                <img src="https://sub-recipe-bucket.s3.ap-northeast-2.amazonaws.com/sauce/ranch_sauce.jpg" class="card-img-top" alt="...">
-                                <p class="card-text"><span class = "text-subject">kcal : </span><span calss = "card-text-value">116</span></p>
-                                <a href="#" class="btn btn-primary">추가</a>
-                            </div>
-                        </div>
-                      </li>
-                   
-                </ul>
-            </article>
-            <div class="post">
-                <h2>영양 정보 총합</h2>
-                <div class="total">
-                    <div class="inner">
-                        <ul>
-                            <li><span class = "total-subject">kcal : </span><span class = "total-value"></span></li>
-                        </ul>
-                        <ul>
-                            <li><span class = "total-subject">fat : </span><span class = "total-value"></span></li>
-                        </ul>
-                        <ul>
-                            <li><span class = "total-subject">protein : </span><span class = "total-value"></span></li>
-                        </ul>
-                    </div>
+        <article class="menuPic">
+            <h3>
+                메뉴 선택
+            </h3>
+            <ul id="sandwich-list">
+            </ul>
+        </article>
+        <article class="breadPic">
+            <h3>
+                빵 선택
+            </h3>
+            <ul id="breads-list">
+
+            </ul>
+        </article>
+        <article class="cheesePic">
+            <h3>
+                치즈 선택
+            </h3>
+            <ul id="cheese-list">
+            </ul>
+        </article>
+        <article class="vegePic">
+            <h3>
+                야채 선택
+            </h3>
+            <ul id="veggie-list">
+
+            </ul>
+        </article>
+        <article class="saucePic">
+            <h3>
+                소스 선택
+            </h3>
+            <ul id="sauce-list">
+            </ul>
+        </article>
+        <div class="post">
+            <h2>영양 정보 총합</h2>
+            <div class="total">
+                <div class="inner">
+                    <ul>
+                        <li><span class="total-subject">kcal : </span><span class="total-value"></span></li>
+                    </ul>
+                    <ul>
+                        <li><span class="total-subject">fat : </span><span class="total-value"></span></li>
+                    </ul>
+                    <ul>
+                        <li><span class="total-subject">protein : </span><span class="total-value"></span></li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="post">
-                <h2>레시피 설명</h2>
-                <form>
-                    <div class="inner">
-                        <div class="postTitle">
-                            <dl>
-                                <dt>제목</dt>
-                                <dd>
+        <div class="post">
+            <h2>레시피 설명</h2>
+            <form>
+                <div class="inner">
+                    <div class="postTitle">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>
                                     <span>
                                         <input type="text" placeholder="레시피 제목을 알려주세요.">
                                     </span>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="postDetail">
-                            <dl>
-                                <dt>내용</dt>
-                                <dd>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="postDetail">
+                        <dl>
+                            <dt>내용</dt>
+                            <dd>
                                     <span>
                                         <textarea placeholder="자세한 설명을 알려주세요."></textarea>
                                     </span>
-                                </dd>
-                            </dl>
-                        </div>
+                            </dd>
+                        </dl>
                     </div>
-                    <button><a href="notice.html">완료</a></button>
-                </form>
-            </div>
+                </div>
+                <button><a href="notice.html">완료</a></button>
+            </form>
         </div>
-        
-    </section>
+    </div>
 
-    <footer>
-        <div class="inner">
-            <div class="footerMenu">
-                <ul>
-                    <li>개인정보처리방침</li>
-                    <li>서비스이용약관</li>
-                </ul>
-            </div>
-            <div class="footerMenu2">
-                <ul>
-                    <li>회사명 : ㈜서브웨이</li>
-                    <li>사업자등록번호 : 123-45-67890</li>
-                    <li> COPYRIGHT(C) 2023 ㈜서브웨이. CO.LTD ALL RIGHT RESERVED.</li>
-                </ul>
-            </div>
+</section>
+
+<footer>
+    <div class="inner">
+        <div class="footerMenu">
+            <ul>
+                <li>개인정보처리방침</li>
+                <li>서비스이용약관</li>
+            </ul>
         </div>
-    </footer>
+        <div class="footerMenu2">
+            <ul>
+                <li>회사명 : ㈜서브웨이</li>
+                <li>사업자등록번호 : 123-45-67890</li>
+                <li> COPYRIGHT(C) 2023 ㈜서브웨이. CO.LTD ALL RIGHT RESERVED.</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-    <script>
+<script>
+    window.onload = function () {
+        dataSettingByUrl("https://api.sub-recipe.com/materials/sandwich-bases");
+        dataSettingByUrl("https://api.sub-recipe.com/materials/breads")
+        dataSettingByUrl("https://api.sub-recipe.com/materials/cheeses")
+        dataSettingByUrl("https://api.sub-recipe.com/materials/veggies")
+        dataSettingByUrl("https://api.sub-recipe.com/materials/sauces")
+    };
 
-        const btn = document.getElementById("get-sandwich");
-    
-        btn.addEventListener("click", async function(){
-    
-            await fetch("https://api.sub-recipe.com/materials/sandwich-bases")
-            .then(data =>{
-                if(data.ok){
+    async function dataSettingByUrl(url) {
+
+        let responsePromise = fetch(url)
+            .then(data => {
+                if (data.ok) {
                     return data.json();
                 }
             })
-            .then(respose => {
-                console.log(respose);
-                const arr = respose.sandwichBases;
-
-                console.log(arr);
-                setData(arr);
+            .then(response => {
+                if (url.match("sandwich-bases")) {
+                    setSandwichBaseData(response.sandwichBases)
+                    return;
+                }
+                if (url.match("breads")) {
+                    setBreadsData(response.breadDataList)
+                    return;
+                }
+                if (url.match("cheeses")) {
+                    setCheesesData(response.cheeseDataList)
+                    return;
+                }
+                if (url.match("veggies")) {
+                    setVeggiesData(response.veggieDataList)
+                    return;
+                }
+                if (url.match("sauces")) {
+                    setSaucesData(response.sauceDataList)
+                    return;
+                }
             });
-    
+
+    }
+
+    function setSandwichBaseData(sandwichBaseDataList) {
+
+        const ulList = document.getElementById("sandwich-list");
+
+        sandwichBaseDataList.forEach(item => {
+            const liElement = document.createElement('li');
+            liElement.innerHTML = `
+            <div class="card  border-success mb-3" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title" id="title">${item.korName}</h5>
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <p class="card-text"><span class="text-subject">kcal : </span><span class="card-text-value">${item.kcal}</span></p>
+                <p class="card-text"><span class="text-subject">fat : </span><span class="card-text-value">${item.fat}</span></p>
+                <p class="card-text"><span class="text-subject">protein : </span><span class="card-text-value">${item.protein}</span></p>
+                <a href="#" class="btn btn-primary">추가</a>
+              </div>
+            </div>
+          `;
+            ulList.appendChild(liElement);
         })
 
+    }
 
-        function setData(arr){
+    function setBreadsData(breadsDataList) {
 
-            const list = document.getElementById("sandwich-list");
+        const ulList = document.getElementById("breads-list");
 
-            console.log(arr.length);
-            console.log(list.length);
-        }
-        
-    </script>
+        breadsDataList.forEach(item => {
+            const liElement = document.createElement('li');
+            liElement.innerHTML = `
+            <div class="card  border-success mb-3" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title" id="title">${item.name}</h5>
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <p class="card-text"><span class="text-subject">kcal : </span><span class="card-text-value">${item.kcal}</span></p>
+                <p class="card-text"><span class="text-subject">fat : </span><span class="card-text-value">${item.fat}</span></p>
+                <p class="card-text"><span class="text-subject">protein : </span><span class="card-text-value">${item.protein}</span></p>
+                <a href="#" class="btn btn-primary">추가</a>
+              </div>
+            </div>
+          `;
+            ulList.appendChild(liElement);
+        })
+
+    }
+
+    function setCheesesData(cheeseDataList) {
+
+        const ulList = document.getElementById("cheese-list");
+
+        cheeseDataList.forEach(item => {
+            const liElement = document.createElement('li');
+            liElement.innerHTML = `
+            <div class="card  border-success mb-3" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title" id="title">${item.name}</h5>
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <p class="card-text"><span class="text-subject">kcal : </span><span class="card-text-value">${item.kcal}</span></p>
+                <p class="card-text"><span class="text-subject">fat : </span><span class="card-text-value">${item.fat}</span></p>
+                <p class="card-text"><span class="text-subject">protein : </span><span class="card-text-value">${item.protein}</span></p>
+                <a href="#" class="btn btn-primary">추가</a>
+              </div>
+            </div>
+          `;
+            ulList.appendChild(liElement);
+        })
+
+    }
+
+    function setVeggiesData(veggieDataList) {
+
+        const ulList = document.getElementById("veggie-list");
+
+        veggieDataList.forEach(item => {
+            const liElement = document.createElement('li');
+
+            liElement.innerHTML = `
+            <div class="card  border-success mb-3" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title" id="title">${item.name}</h5>
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <p class="card-text"><span class="text-subject">kcal : </span><span class="card-text-value">${item.kcal}</span></p>
+                <a href="#" class="btn btn-primary">추가</a>
+              </div>
+            </div>
+          `;
+            ulList.appendChild(liElement);
+        })
+
+    }
+
+    function setSaucesData(saucesDataList) {
+
+        const ulList = document.getElementById("sauce-list");
+
+        saucesDataList.forEach(item => {
+            const liElement = document.createElement('li');
+
+            liElement.innerHTML = `
+            <div class="card  border-success mb-3" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title" id="title">${item.name}</h5>
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <p class="card-text"><span class="text-subject">kcal : </span><span class="card-text-value">${item.kcal}</span></p>
+                <a href="#" class="btn btn-primary">추가</a>
+              </div>
+            </div>
+          `;
+            ulList.appendChild(liElement);
+        })
+
+    }
+</script>
 
 </body>
