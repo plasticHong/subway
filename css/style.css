@@ -76,6 +76,37 @@ header .inner nav ul li a {
   font: 12px/40px "맑은 고딕";
 }
 
+.search {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.search .inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border: 2px solid #239347;
+  display: flex;
+  border-radius: 20px;
+  padding: 5px;
+}
+.search .inner input {
+  border: 1px solid #239347;
+  border: none;
+  font: 16px/1 Noto Sans KR;
+  width: 100%;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.search .inner a {
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffcb0a;
+  border-left: 1px solid #239347;
+}
+
 footer {
   width: 100vw;
   height: 100px;
@@ -244,7 +275,7 @@ footer .inner .footerMenu2 ul li {
 .board .inner .post form .postTitle dl dt {
   width: 20%;
   height: 40px;
-  font: 20px/40px "맑은 고딕";
+  font: 20px/40px Noto Sans KR;
   border-right: 1px dotted #ddd;
 }
 .board .inner .post form .postTitle dl dd {
@@ -253,7 +284,7 @@ footer .inner .footerMenu2 ul li {
 }
 .board .inner .post form .postTitle dl dd span input {
   border: none;
-  font: 12px/1 "맑은 고딕";
+  font: 12px/1 Noto Sans KR;
   width: 100%;
   padding-left: 20px;
 }
@@ -271,7 +302,7 @@ footer .inner .footerMenu2 ul li {
 .board .inner .post form .postDetail dl dt {
   width: 20%;
   height: 300px;
-  font: 20px/300px "맑은 고딕";
+  font: 20px/300px Noto Sans KR;
   border-right: 1px dotted #ddd;
 }
 .board .inner .post form .postDetail dl dd {
@@ -279,23 +310,38 @@ footer .inner .footerMenu2 ul li {
   text-align: left;
   height: 300px;
 }
-.board .inner .post form .postDetail dl dd span input {
+.board .inner .post form .postDetail dl dd span textarea {
   border: none;
-  font: 12px/1 "맑은 고딕";
+  font: 12px/1 Noto Sans KR;
   width: 100%;
   padding-left: 20px;
-  height: 300px;
+  height: 100%;
 }
-.board .inner .post form .postEnd {
+.board .inner .post form button {
   margin-top: 10px;
   width: 200px;
   height: 50px;
   border-radius: 25px;
-  font: bold 20px/50px Noto Sans KR;
+  transition: 0.3s;
   border: 2px solid #239347;
-  color: #239347;
   background-color: #fff;
   cursor: pointer;
+}
+.board .inner .post form button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 20px/50px Noto Sans KR;
+  color: #239347;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.board .inner .post form button:hover {
+  border: 2px solid #cfaa24;
+  background-color: #ffcb0a;
+}
+.board .inner .post form button:hover a {
+  color: #fff;
 }
 
 #logInPage {
@@ -938,6 +984,130 @@ footer .inner .footerMenu2 ul li {
   color: #239347;
   background-color: #fff;
   cursor: pointer;
+}
+
+.community {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.community .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.community .inner h1 {
+  font: 40px/1 Black Han Sans;
+  position: relative;
+  margin-bottom: 20px;
+}
+.community .inner h1::before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #ffcb0a;
+  border-radius: 50px 50px 0 50px;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  transform: translateX(-13px);
+}
+.community .inner table {
+  width: 100%;
+  border-bottom: 2px solid #239347;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.community .inner table tr {
+  transition: 0.3s;
+}
+.community .inner table tr:nth-of-type(even) {
+  background: #fffcf3;
+}
+.community .inner table tr:hover {
+  background: #97c5a6;
+}
+.community .inner table tr th {
+  padding: 15px;
+  background: #239347;
+  color: #eee;
+  font: 16px/1 Noto Sans KR;
+}
+.community .inner table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.community .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.community .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #91b49e;
+  text-align: center;
+  font-family: Noto Sans KR;
+}
+.community .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.community .inner table tr td:nth-of-type(3) {
+  font-family: Noto Sans KR;
+}
+.community .inner table tr td a {
+  color: #333;
+  line-height: 1.4;
+}
+.community .inner .pagination {
+  width: 100%;
+  text-align: center;
+}
+.community .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .pagination .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #239347;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.community .inner .pagination .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #239347;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.community .inner .pagination .numbers {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.community .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #239347;
+  font: 11px/30px "arial";
+  color: #239347;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.community .inner .pagination .numbers a:hover {
+  background: #239347;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

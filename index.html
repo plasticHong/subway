@@ -6,7 +6,7 @@
     <title>SUBWAY 써브웨이</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/scroll.js"></script>
-
+    <script src="https://kit.fontawesome.com/220fae79fc.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
@@ -23,7 +23,12 @@
             </nav>
         </div>
     </header>
-    
+    <section class="search">
+        <div class="inner">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>    
+    </section>
     <section class="board">
         <h1>레시피 만들기</h1>
         <div class="inner">
@@ -656,13 +661,13 @@
                                 <dt>내용</dt>
                                 <dd>
                                     <span>
-                                        <input type="text" placeholder="자세한 설명을 알려주세요.">
+                                        <textarea placeholder="자세한 설명을 알려주세요."></textarea>
                                     </span>
                                 </dd>
                             </dl>
                         </div>
                     </div>
-                    <input type="submit" class="postEnd" value="완료">
+                    <button><a href="notice.html">완료</a></button>
                 </form>
             </div>
         </div>

@@ -74,7 +74,38 @@ header{
         }    
     }
 }
-
+.search{
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+    .inner{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        border: 2px solid #239347;
+        display: flex;
+        border-radius: 20px;
+        padding: 5px;
+   
+        input{
+            border: 1px solid #239347;
+            border: none;
+            font: 16px/1 $font1;
+            width: 100%;
+            padding-left: 20px;
+            margin-left: 10px;
+            
+        }
+        a{
+            width: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: #ffcb0a;
+            border-left: 1px solid #239347;
+        }
+    }
+}
 footer{
     width: 100vw;
     height: 100px;
